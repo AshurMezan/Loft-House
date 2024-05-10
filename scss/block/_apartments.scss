@@ -1,5 +1,11 @@
 .apartments {
-
+  position: relative;
+  &::before {
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    content: "III";
+    @include decorNumber;
+  }
 }
 .apartments__title {
   margin-bottom: 88px;

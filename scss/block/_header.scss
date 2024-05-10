@@ -8,12 +8,30 @@
   padding-top: 30px;
   padding-bottom: 75px;
 
+  @include mediaTablet {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.header__nav-btn {
+  display: none;
+  @include  mediaTablet {
+    display: block;
+  }
+}
+
+.header__nav {
+  @include mediaTablet {
+    display: none;
+  }
 }
 .header__title {
   position: relative;
@@ -23,6 +41,11 @@
   color: $accent;
   font-weight: 700;
   padding-bottom: 120px;
+
+  @include mediaTablet {
+    font-size: 32px;
+    padding-bottom: 120px;
+  }
 }
 .header__title-icon {
   position: absolute;
@@ -36,4 +59,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+  @include mediaTablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }

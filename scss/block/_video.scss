@@ -1,5 +1,13 @@
 .video {
   text-align: center;
+  position: relative;
+
+  &::after {
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0%);
+    content: "IV";
+    @include decorNumber;
+  }
 }
 .video__link {
   position: relative;

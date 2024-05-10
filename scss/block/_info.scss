@@ -23,4 +23,8 @@
     background-image: url("./../img/header/placeholder.svg");
     padding-left: 35px;
   }
+
+  @include mediaTablet {
+    font-size: 15px;
+  }
 }
