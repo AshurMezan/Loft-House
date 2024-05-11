@@ -35,6 +35,10 @@ a {
   font-family: $font-accent;
   color: $accent;
   font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
 }
 
 // Для семантики  сделал заголовок, хотя в макете нет, но скрыл его.
@@ -51,4 +55,8 @@ a {
 .link-bold {
   color: $accent;
   font-weight: 700;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
